@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Dream</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    * {
+      /* 初始化 */
+      margin: 0;
+      padding: 0;
+    }
+
+    li {
+      list-style: none;
+      font-size: 38px;
+    }
+
+    .container {
+      /* 100%窗口宽度和高度 */
+      width: 100vw;
+      height: 100vh;
+      /* 设置滚动贴合的方式：沿Y轴滚动 mandatory表示强制滚动 */
+      scroll-snap-type: y mandatory;
+      /* 需要把滚动条设置到直接父容器，scroll-snap-type才能生效 */
+      /* 溢出时，垂直保留滚动条，水平隐藏滚动条 */
+      overflow-y: scroll;
+      overflow-x: hidden;
+    }
+
+    .container div {
+      /* 100%窗口宽度和高度 */
+      width: 100vw;
+      height: 100vh;
+      /* 弹性布局 居中 */
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      /* 通过var函数调用自定义属性--c，设置各个div的背景颜色 */
+      background-color: var(--c);
+      /* font-size: 200px; */
+      color: #fff;
+      /* 设置下一页的内容会滚动贴合到顶部 */
+      scroll-snap-align: start;
+    }
+
+    .list {
+      padding: 0 28px;
+    }
+
+    .title {
+      display: flex;
+      justify-content: center;
+      font-size: 58px;
+      font-weight: 500;
+      /* padding-top: 50px; */
+      padding-bottom: 80px;
+    }
+
+    .container div.text-black {
+      color: #000;
+    }
+  </style>
+</head>
+
+<body>
+
+</body>
+<div class="container">
+  <!-- --c为自定义属性（颜色值），可通过var函数进行调用 -->
+  <div style="--c: #000;">
+    <header class="title">99% of projects in web3 are shit! </header>
+    <header class="title">Dream is 1%!</header>
+    <!-- <ul class="list">
+      <li class="list-item">
+        <span>
+          99% of projects in web3 are shit ! Dream is 1% !
+        </span>
+      </li>
+    </ul> -->
+  </div>
+  <div style="--c: #fff;" class="text-black"><!--#0080FF-->
+    <!-- <header class="title">Team</header> -->
+    <header class="title">A team with dreams!</header>
+    <header class="title">A team that wants to create value!</header>
+    <header class="title">A team that wants to do something meaningful!</header>
+    <!-- <ul class="list">
+      <li class="list-item">
+        <span>
+          A team with dreams!
+          Team has a dream, which is to manage a $10 billion fund one
+          day
+        </span>
+      </li>
+      <li class="list-item">
+        <span>A team that wants to create value!</span>
+        <span>want to do something meaningful</span>
+      </li>
+      <li class="list-item">
+        <span>
+          A team that wants to do something meaningful!
+        </span>
+        <span>
+          4+ years of professional experience trading $BTC/$ETH
+        </span>
+      </li>
+    </ul> -->
+  </div>
+  <div style="--c: #000;"> <!--#52c41a-->
+    <header class="title">Project</header>
+    <ul class="list">
+      <li class="list-item">
+        <span>Earn profit from trading $BTC/$ETH.</span>
+      </li>
+      <li class="list-item">
+        <span>
+          50% of the profit is used to buy back $DREAM and burn it(once
+          a quarter).
+        </span>
+      </li>
+    </ul>
+  </div>
+  <div style="--c: #fff;" class="text-black">
+    <header class="title">Tokenomics</header>
+    <ul class="list">
+      <li class="token-item list-item">
+        <span class="token-item">
+          $DREAM total supply: 10,000,000,000.
+        </span>
+      </li>
+      <li class="token-item list-item">
+        <span class="token-item">
+          Initial fully diluted valuation: $2,000,000.
+        </span>
+      </li>
+      <!-- <li class="token-item list-item">
+        <span class="token-item">Fair Launch: opportunities are only given
+          to ordinary people! <a href="https://www.erc20.cash/">click here</a></span>
+      </li> -->
+
+      <!-- 
+                  <li class="token-item list-item">
+                    <span class="token-item">IDO: 40%</span>
+                  </li>
+                  <li class="token-item list-item">
+                    <span class="token-item">
+                      DAO Treasury: 20%(After the DAO is established, the usage is
+                      determined by the DAO. )
+                    </span>
+                  </li>
+                  <li class="token-item list-item">
+                    <span>
+                      Team: 20%(12 months Cliff, with a vesting period of two years)
+                    </span>
+                  </li>
+                  <li class="token-item list-item">
+                    <span>Liquidity: 10%(5%for DEX,5% for CEX)</span>
+                  </li>
+                  <li class="token-item list-item"><span>Marketing: 7%</span></li>
+                  <li class="token-item list-item"><span>Airdrop: 3%</span></li>
+                  <li class="token-item list-item"><span>No Taxes</span></li>
+                   -->
+    </ul>
+  </div>
+  <!-- <div style="--c: lightskyblue;">
+    <header class="title">Roadmap</header>
+    <div class="home-list">
+      <div class="home-step">
+        <span class="home-caption1">01</span>
+        <ul class="list home-ul3">
+          <li class="list-item">
+            <span>
+              <span>Fair Launch(coming soon)</span>
+              <br>
+            </span>
+          </li>
+          <li class="list-item">
+            <span>DEX Listings(coming soon)</span>
+          </li>
+          <li class="list-item"><span>1,000+ Holders</span></li>
+        </ul>
+      </div>
+      <div class="home-step1">
+        <span class="home-caption2">02</span>
+        <div class="home-heading3">
+          <ul class="list home-ul4">
+            <li class="list-item"><span>CEX Listings</span></li>
+            <li class="list-item">
+              <span>Build Community &amp;&nbsp;DAO</span>
+            </li>
+            <li class="list-item"><span>10,000+holders</span></li>
+          </ul>
+        </div>
+      </div>
+      <div class="home-step2">
+        <span class="home-caption3">03</span>
+        <div>
+          <ul class="list home-ul5">
+            <li class="list-item">
+              <span>
+                <span>T1 Exchange Listings</span>
+                <br>
+              </span>
+            </li>
+            <li class="list-item"><span>100,000+ holders</span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div> -->
+</div>
+
+</html>
