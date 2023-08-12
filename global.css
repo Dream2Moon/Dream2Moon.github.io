@@ -1,0 +1,61 @@
+body {
+  margin: 0;
+  line-height: normal;
+}
+
+:root {
+  /* fonts */
+  --label-medium-600: Inter;
+
+  /* font sizes */
+  --label-medium-600-size: 1rem;
+  --paragraph-large-500-size: 1.13rem;
+  --display-medium-600-size: 3.25rem;
+  --heading-small-600-size: 1.5rem;
+  --display-medium-6001-size: 2.75rem;
+  --font-size-sm: 0.88rem;
+  --heading-x-small-600-size: 1.25rem;
+  --heading-x-large-600-size: 2.25rem;
+  --display-large-600-size: 6rem;
+
+  /* Colors */
+  --primary-black-100: #000;
+  --gray-500: #757575;
+  --gray-800: #1f1f1f;
+  --gray-900: #141414;
+  --night-ghost-text: #fff;
+  --gray-700: #333;
+  --night-stroke-border: #6b6b6b;
+  --gray-600: #545454;
+
+  /* Gaps */
+  --gap-9xs: 0.25rem;
+  --gap-5xs: 0.5rem;
+  --gap-101xl: 7.5rem;
+  --gap-5xl: 1.5rem;
+  --gap-base: 1rem;
+  --gap-45xl: 4rem;
+  --gap-61xl: 5rem;
+  --gap-29xl: 3rem;
+  --gap-4xs: 0.56rem;
+  --gap-13xl: 2rem;
+  --gap-21xl: 2.5rem;
+
+  /* Paddings */
+  --padding-5xl: 1.5rem;
+  --padding-base: 1rem;
+  --padding-xl: 1.25rem;
+  --padding-61xl: 5rem;
+  --padding-21xl: 2.5rem;
+  --padding-146xl: 10.31rem;
+  --padding-37xl: 3.5rem;
+  --padding-293xl: 19.5rem;
+  --padding-77xl: 6rem;
+
+  /* border radiuses */
+  --br-5xl: 24px;
+  --br-base: 16px;
+  --br-13xl: 32px;
+  --br-6xl: 25px;
+  --br-5xs: 8px;
+}
